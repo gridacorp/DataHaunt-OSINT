@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "generated_at": "2025-11-12T12:00:00-06:00",
+    "tool": "osint_tool",
+    "version": "1.0",
+    "notes": "Archivo de ejemplo — sustituir por la salida real de la ejecución."
+  },
+  "query": "Juan José Pérez Lota",
+  "query_type": "name",
+  "variants_used": [
+    "juan pérez lota",
+    "josé pérez lota",
+    "pérez lota juan josé",
+    "juan josé pérez",
+    "juan josé lota",
+    "juan.perez",
+    "jperez"
+  ],
+  "summary": {
+    "emails_found": [
+      "juan.perez@gmail.com",
+      "j.perez@ejemplo.com"
+    ],
+    "phones_found": [
+      "+5215512345678"
+    ],
+    "urls_found_count": 12,
+    "top_domains": [
+      [
+        "instagram.com",
+        4
+      ],
+      [
+        "github.com",
+        2
+      ],
+      [
+        "pastebin.com",
+        1
+      ]
+    ],
+    "inferred_profiles": {
+      "instagram": [
+        "juanperez_oficial"
+      ],
+      "github": [
+        "juanperez"
+      ]
+    }
+  },
+  "entities": {
+    "emails": [
+      "juan.perez@gmail.com",
+      "j.perez@ejemplo.com"
+    ],
+    "phones": [
+      "+5215512345678"
+    ],
+    "urls": [
+      "https://instagram.com/juanperez_oficial",
+      "https://github.com/juanperez",
+      "https://pastebin.com/abcdefg",
+      "https://example.com/profiles/juan-perez"
+    ],
+    "socials": {
+      "instagram": [
+        "juanperez_oficial"
+      ],
+      "github": [
+        "juanperez"
+      ],
+      "twitter": [],
+      "tiktok": []
+    }
+  },
+  "results": [
+    {
+      "engine": "google",
+      "title": "Perfil público — Juan Pérez",
+      "link": "https://example.com/profiles/juan-perez",
+      "snippet": "Perfil público con información biográfica y enlaces a redes sociales.",
+      "page": {
+        "status": 200,
+        "title": "Juan Pérez — Perfil",
+        "description": "Perfil público de Juan José Pérez Lota en example.com"
+      },
+      "score": 8,
+      "category": "website",
+      "domain_count": 1
+    },
+    {
+      "engine": "bing",
+      "title": "Instagram - juanperez_oficial",
+      "link": "https://instagram.com/juanperez_oficial",
+      "snippet": "Publicaciones recientes de Juan Pérez.",
+      "page": {
+        "status": 200,
+        "title": "juanperez_oficial (@juanperez_oficial) • Instagram photos and videos",
+        "description": "Cuenta verificada/indicios públicos."
+      },
+      "score": 12,
+      "category": "instagram",
+      "domain_count": 4
+    },
+    {
+      "engine": "yandex",
+      "title": "GitHub - juanperez",
+      "link": "https://github.com/juanperez",
+      "snippet": "Repositorios públicos de usuario juanperez.",
+      "page": {
+        "status": 200,
+        "title": "juanperez (Juan Pérez) · GitHub",
+        "description": "Proyectos y contributions."
+      },
+      "score": 7,
+      "category": "github",
+      "domain_count": 2
+    },
+    {
+      "engine": "google",
+      "title": "Paste con registro público",
+      "link": "https://pastebin.com/abcdefg",
+      "snippet": "Fragmento de texto donde aparece 'juan.perez@gmail.com'.",
+      "page": {
+        "status": 200,
+        "title": "Pastebin: example paste",
+        "description": "Contenido público referenciado."
+      },
+      "score": 5,
+      "category": "pastebin",
+      "domain_count": 1
+    }
+  ],
+  "raw_blocks": [
+    {
+      "query": "juan pérez lota",
+      "sources": [
+        {
+          "engine": "google",
+          "title": "Perfil público — Juan Pérez",
+          "link": "https://example.com/profiles/juan-perez",
+          "snippet": "Perfil público con información biográfica y enlaces a redes sociales.",
+          "raw": "Perfil público con información biográfica and https://example.com/profiles/juan-perez"
+        },
+        {
+          "engine": "google",
+          "title": "Instagram - juanperez_oficial",
+          "link": "https://instagram.com/juanperez_oficial",
+          "snippet": "Publicaciones recientes de Juan Pérez.",
+          "raw": "Publicaciones recientes and https://instagram.com/juanperez_oficial"
+        }
+      ],
+      "entities": {
+        "emails": [
+          "juan.perez@gmail.com"
+        ],
+        "phones": [
+          "+5215512345678"
+        ],
+        "urls": [
+          "https://example.com/profiles/juan-perez",
+          "https://instagram.com/juanperez_oficial"
+        ],
+        "socials": {
+          "instagram": [
+            "juanperez_oficial"
+          ]
+        }
+      }
+    },
+    {
+      "query": "jperez",
+      "sources": [
+        {
+          "engine": "bing",
+          "title": "GitHub - juanperez",
+          "link": "https://github.com/juanperez",
+          "snippet": "Repositorios públicos de usuario juanperez.",
+          "raw": "Repositorios públicos and https://github.com/juanperez"
+        },
+        {
+          "engine": "google",
+          "title": "Paste con registro público",
+          "link": "https://pastebin.com/abcdefg",
+          "snippet": "Fragmento de texto donde aparece 'juan.perez@gmail.com'.",
+          "raw": "Fragmento de texto and https://pastebin.com/abcdefg"
+        }
+      ],
+      "entities": {
+        "emails": [
+          "j.perez@ejemplo.com"
+        ],
+        "phones": [],
+        "urls": [
+          "https://github.com/juanperez",
+          "https://pastebin.com/abcdefg"
+        ],
+        "socials": {
+          "github": [
+            "juanperez"
+          ]
+        }
+      }
+    }
+  ]
+}
